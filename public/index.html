@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Poetry, electronic literature, coding, essays and other things by Fernanda Mugica">
+    <meta name="keywords" content="poetry, art, code, philosophy">
+    <title>Fernanda Mugica | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+        
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- ÍCONOS TWITTER ETC -->
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- EFECTO DE COSAS QUE VAN LLEGANDO-->
+    <link href="vendor/aos/aos.css" rel="stylesheet"> 
+    
+
+    <!-- CSS --> 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+
+    <!--llama a la página individual-->
+    <link href="individual.html" rel="import"/>
+
+  </head>
+
+  
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 mt-3">
+         
+        
+        
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="preview-images"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        let imagesPreview = function(input, placeToInsertImagePreview) {
+          if (input.files) {
+            let filesAmount = input.files.length;
+            for (i = 0; i < filesAmount; i++) {
+              let reader = new FileReader();
+              reader.onload = function(event) {
+                $($.parseHTML("<img>"))
+                  .attr("src", event.target.result)
+                  .appendTo(placeToInsertImagePreview);
+              };
+              reader.readAsDataURL(input.files[i]);
+            }
+          }
+        };
+        $("#input-files").on("change", function() {
+          imagesPreview(this, "div.preview-images");
+        });
+      });
+    </script>
+    <!--AGREGRO SCRIPT DE HYDRA -->
+
+    <script src="https://unpkg.com/hydra-synth"></script>
+  </head>
+  <body>           
+    <h2></h2>
+        <div id="top">
+            <button onclick="useCamera()" class="readmore">All this new technology  /  will eventually give us new feelings  /  that will never completely displace the old ones  /  leaving everyone feeling quite nervous  /  and split in two </button>
+        </div>
+
+        <div id="negr">
+            
+            All the page content
+            
+            
+            </div>
+            <div id="top">
+              <form method="post" enctype="multipart/form-data" action="/upload">
+                <input type="file" name="file" placeholder="ooooooooo">
+                <input type="submit" value="Submit">
+           </form>
+          </div> 
+              <div id="negr">
+              
+                  All the page content
+                  
+                  </div>
+
+            
+        <div id="top">
+          <button onclick="useFoto()"class="readmore" type="image" src="http://localhost:3000/image.png"> ek </button>  
+          <button onclick="osc(20).rotate(0, 0.1).modulate(osc()).out()" class="readmore"> yo </button>
+          <button onclick="audio()"class="readmore"> eu </button>
+          <button onclick="osc(40).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="useCamera()"class="readmore"> 'ana </button>
+          <button onclick="osc(60).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="feedback()"class="readmore"> 我 </button>
+          <button onclick="osc(80).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="useFoto()"class="readmore" type="image" src="http://localhost:3000/image.png"> mimi </button>  
+          <button onclick="osc(100).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+            
+          <button onclick="audio()"class="readmore"> я </button>
+          <button onclick="osc(120).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="useFoto()"class="readmore"> io </button>
+          <button onclick="osc(140).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="useCamera()"class="readmore"> tôi </button>
+          <button onclick="osc(160).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button> 
+            
+          <button onclick="useFoto()"class="readmore" type="image" src="http://localhost:3000/image.png"> ich </button>  
+          <button onclick="osc(180).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+            
+          <button onclick="audio()"class="readmore"> 나 </button>
+          <button onclick="osc(200).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="useCamera()"class="readmore"> mě </button>
+          <button onclick="osc(220).rotate(0, 0.1).modulate(osc()).out()"class="readmore"> yo </button>
+          <button onclick="osc(30, 0.1, 0.8).rotate(0, 0.1).kaleid().color(0, 10,210).out()"class="readmore"> ez </button>
+          
+            
+           
+          </div>
+
+          <div id="negr">
+            
+            All the page content
+            
+            
+            </div>
+        
+
+                
+        
+        <canvas id="myCanvas" width="1080" height="500px"></canvas>
+
+        
+      </div>
+      
+            
+     
+        
+   
+    <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+      noise().pixelate(20,20).out(o0)
+
+noise()
+  .mult(osc(10,0.25,1))
+  .scrollY(1,0.25)
+  .pixelate([100,40,20,70].fast(0.25))
+  
+  
+  .out(o0)
+      
+      // create functions to use with buttons
+      function useCamera() {
+        s0.initCam()
+        src(s0).color(-1, Math.random()*10, 1).colorama().repeat(3.0, 1.0, 0.0, 0.0).out()
+      }
+
+      function useFoto() {
+        s0.initImage("http://localhost:3000/image.png") 
+
+        src(s0).color(-1, Math.random()*2, 1).colorama().out()
+      }
+      
+      
+      
+      
+      function feedback() {
+        
+        
+        src(o1)
+        
+          .layer(src(o0).mask(shape(4, 0.4, 0)))
+          .scrollX([0.005, -0.005])
+          .scrollY(0.005)
+          .color(( () => a.fft[1] *2 ))
+          .out(o1)
+        
+        render(o1)
+      }
+
+      function audio() {
+        voronoi()
+      .color(( () => a.fft[2] *10 ))
+    .rotate(({time})=>(time%360))
+     .modulate(osc(2,0.1,0.5)
+         
+            .scale( () => a.fft[0] *2 )
+            .modulate(noise(0.6,0.5)),
+            0.5)
+  .out(o0)
+      }
+
+     
+      function clearElem(elem) {
+  while (elem.firstChild) {
+    elem.removeChild(elem.firstChild);
+  }
+}
+
+function P(children) {
+  let elem = document.createElement('p');
+  for (let child of children) {
+    elem.appendChild(child);
+  }
+  return elem;
+}
+
+function P1(child) {
+  return P([child]);
+}
+
+function SPAN(cls, children) {
+  let elem = document.createElement('span');
+  elem.className = cls;
+  for (let child of children) {
+    elem.appendChild(child);
+  }
+  return elem;
+}
+
+function A(text, link) {
+  let elem = document.createElement('a');
+  elem.href = link;
+  elem.appendChild(text);
+  return elem;
+}
+
+function A_onclick(text, action) {
+  let elem = document.createElement('a');
+  elem.href = 'javascript:void(0)';
+  elem.onclick = action;
+  elem.appendChild(text);
+  return elem;
+}
+
+
+function SPAN1(cls, child) {
+  return SPAN(cls, [child]);
+}
+
+function BR(str) {
+  return document.createElement('br');
+}
+
+function TEXT(str) {
+  return document.createTextNode(str);
+}
+
+
+    </script>
+
+
+
+<div id="negr">
+            
+  All the page content
+  
+  </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,1 @@
+document.querySelector('.item-wrap fancybox').innerHTML = "<h2>El usuario es mayor de edad</h2>";
