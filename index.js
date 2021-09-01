@@ -12,9 +12,9 @@ const httpServer = http.createServer(app);
 app.listen(process.env.PORT || 3000);
 // const PORT = process.env.PORT || 3000;
 
-httpServer.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
+// httpServer.listen(PORT, () => {
+//  console.log(`Server is listening on port ${PORT}`);
+// });
 
 // put the HTML file containing your form in a directory named "public" (relative to where this script is located)
 app.get("/", express.static(path.join(__dirname, "./public")));
