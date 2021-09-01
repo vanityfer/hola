@@ -2,14 +2,15 @@ const http = require("http");
 const path = require("path");
 const fs = require("fs");
 
-app.listen(process.env.PORT || 3000);
+
 
 const express = require("express");
 
 const app = express();
 const httpServer = http.createServer(app);
 
-const PORT = process.env.PORT || 3000;
+app.listen(process.env.PORT || 3000);
+// const PORT = process.env.PORT || 3000;
 
 httpServer.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
