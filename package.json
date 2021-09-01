@@ -8,12 +8,12 @@
    },
    "repository":{
       "type":"git",
-      "url":"git+https://github.com/vanityfer/homenaje-a-david.git"
+      "url":"git+https://github.com/vanityfer/hola.git"
    },
    "author":"",
    "license":"ISC",
    "bugs":{
-      "url":"https://github.com/vanityfer/homenaje-a-david/issues"
+      "url":"https://github.com/vanityfer/hola/issues"
    },
-   "homepage":"https://github.com/vanityfer/homenaje-a-david#readme"
+   "homepage":"https://github.com/vanityfer/hola#readme"
 }
