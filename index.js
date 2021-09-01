@@ -2,7 +2,7 @@ const http = require("http");
 const path = require("path");
 const fs = require("fs");
 
-
+app.listen(process.env.PORT || 3000);
 
 const express = require("express");
 
