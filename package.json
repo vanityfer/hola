@@ -10,7 +10,7 @@
    "description":"hola",
    "main":"index.js",
    "scripts":{
-      "start":"node index.js"
+      "start":"index.js"
    },
    "repository":{
       "type":"git",
