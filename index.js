@@ -35,11 +35,11 @@ const upload = multer({
 
 app.use(express.static(__dirname + '/public'));
 app.post(
-  "/upload",
+  "/index",
   upload.single("file" /* name attribute of <file> element in your form */),
   (req, res) => {
     const tempPath = req.file.path;
-    const targetPath = path.join(__dirname, "./uploads/image.png");
+    const targetPath = path.join(__dirname, "./index/image.png");
 
     if (path.extname(req.file.originalname).toLowerCase() === ".png") {
       fs.rename(tempPath, targetPath, err => {
@@ -60,5 +60,5 @@ app.post(
 );
 
 app.get("/image.png", (req, res) => {
-    res.sendFile(path.join(__dirname, "./uploads/image.png"));
+    res.sendFile(path.join(__dirname, "./index/image.png"));
   });
