@@ -46,14 +46,18 @@ app.post(
         if (err) return handleError(err, res);
 
         res
-        app.get("/", express.static(path.join(__dirname, "./public")));
+        .status(200)
+        .contentType("text/plain")
+        .end("File uploaded!");
       });
     } else {
       fs.unlink(tempPath, err => {
         if (err) return handleError(err, res);
 
         res
-          app.get("/", express.static(path.join(__dirname, "./public")));
+          .status(403)
+          .contentType("text/plain")
+          .end("Only .png files are allowed!");
       });
     }
   }
