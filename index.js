@@ -29,7 +29,7 @@ const handleError = (err, res) => {
 };
 
 const upload = multer({
-  dest: "./uploads"
+  dest: "./uploads/image.png"
   // you might also want to set some limits: https://github.com/expressjs/multer#limits
 });
 
