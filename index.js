@@ -53,9 +53,7 @@ app.post(
         if (err) return handleError(err, res);
 
         res
-          .status(403)
-          .contentType("text/plain")
-          .end("Only .png files are allowed!");
+          app.get("/", express.static(path.join(__dirname, "./public")));
       });
     }
   }
